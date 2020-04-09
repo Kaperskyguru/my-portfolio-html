@@ -22,9 +22,16 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
-	<!-- 
+
 	<style>
-		.slider {}
+		.slider {
+			position: relative;
+			height: 500px;
+			z-index: 0;
+			font-size: 20px;
+			margin-top: 7px;
+			color: #ffbd39;
+		}
 
 		.slider .slider-item .slider-text .subheading {
 			color: #000000;
@@ -54,7 +61,16 @@
 			font-size: 12px;
 			letter-spacing: 3px;
 		}
-	</style> -->
+
+		.slider-item {
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			height: 750px;
+			position: relative;
+			z-index: 0;
+		}
+	</style>
 </head>
 
 <body>
@@ -78,13 +94,12 @@
 			</div>
 		</div>
 	</nav>
-	<section id="home-section" class="hero">
-		<div class="home-slider owl-carousel">
-			<div class="slider-item ">
+	<section id="home-section" class="hero mt-5 pt-5">
+		<div class="slider mt-5 pt-5">
+			<div class="slider-item">
 				<div class="overlay"></div>
 				<div class="container">
-					<div class="row d-md-flex no-gutters slider-text align-items-center justify-content-center"
-						data-scrollax-parent="true">
+					<div class="row d-md-flex no-gutters slider-text align-items-center justify-content-center">
 						<div class="d-flex align-items-center ftco-animate">
 							<div class="text">
 								<span class="subheading">Hello!</span>
